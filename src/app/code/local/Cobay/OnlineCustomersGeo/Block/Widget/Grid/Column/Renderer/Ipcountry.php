@@ -20,7 +20,7 @@ class Cobay_OnlineCustomersGeo_Block_Widget_Grid_Column_Renderer_Ipcountry
 		}
 		if(empty($countryCode)) return $retour;
 
-		$image = $this->getSkinUrl('images/onlinecustomersgrid/' . strtolower($countryCode) . '.gif');
+		$image = $this->getSkinUrl('images/onlinecustomersgeo/' . strtolower($countryCode) . '.gif');
 		$retour = '<img src="' . $image . '" /> ' . $countryName;
 
 		return $retour;
