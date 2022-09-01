@@ -12,7 +12,7 @@ class Cobay_OnlineCustomersGeo_Block_Widget_Grid_Column_Renderer_Ipcountry
 		$countryCity = $_SERVER["GEOIP_CITY_NAME"] ?? '';
 
 		$image = $this->getSkinUrl('images/onlinecustomersgeo/' . strtolower($countryCode) . '.gif');
-		$retour = '<img src="' . $image . '" /> ' . $countryName . ' ' . $countryCity;
+		$retour = '<img src="' . $image . '" /> ' . $countryName . ', ' . $countryCity;
 
 		return $retour;
 	}
