@@ -1,5 +1,5 @@
 <?php
-class Cobay_OnlineCustomerGrid_Helper_Data extends Mage_Core_Helper_Data {
+class Cobay_OnlineCustomersGeo_Helper_Data extends Mage_Core_Helper_Data {
 
 	public function geolocate($ip = '127.0.0.1'){
 		$geolocation = Mage::helper('common/geo');

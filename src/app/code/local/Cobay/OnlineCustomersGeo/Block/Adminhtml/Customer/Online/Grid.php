@@ -1,5 +1,5 @@
 <?php
-class Cobay_OnlineCustomerGrid_Block_Adminhtml_Customer_Online_Grid extends Mage_Adminhtml_Block_Customer_Online_Grid {
+class Cobay_OnlineCustomersGeo_Block_Adminhtml_Customer_Online_Grid extends Mage_Adminhtml_Block_Customer_Online_Grid {
 
     private function addBeforeColumn($columnId, $column,$indexColumn) {
     	$columns = array();

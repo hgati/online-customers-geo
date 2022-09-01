@@ -1,5 +1,5 @@
 <?php
-class Cobay_OnlineCustomerGrid_Block_Adminhtml_Customer_Grid extends Mage_Adminhtml_Block_Customer_Grid {
+class Cobay_OnlineCustomersGeo_Block_Adminhtml_Customer_Grid extends Mage_Adminhtml_Block_Customer_Grid {
 
     protected function _prepareColumns() {
     	parent::_prepareColumns();

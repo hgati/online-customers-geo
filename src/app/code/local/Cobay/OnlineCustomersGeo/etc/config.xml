@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Cobay_OnlineCustomersGeo>
+			<version>0.1.0</version>
+		</Cobay_OnlineCustomersGeo>
+	</modules>
+
+	<global>
+		<helpers>
+			<onlinecustomersgeo>
+				<class>Cobay_OnlineCustomersGeo_Helper</class>
+			</onlinecustomersgeo>
+		</helpers>
+		
+		<blocks>
+            <onlinecustomersgeo>
+            	<class>Cobay_OnlineCustomersGeo_Block</class>
+           	</onlinecustomersgeo>
+			<adminhtml>
+				<rewrite>
+					<customer_online_grid>Cobay_OnlineCustomersGeo_Block_Adminhtml_Customer_Online_Grid</customer_online_grid>
+					<customer_online_grid_renderer_url>Cobay_OnlineCustomersGeo_Block_Adminhtml_Customer_Online_Grid_Renderer_Url</customer_online_grid_renderer_url>
+				</rewrite>
+			</adminhtml>           	
+		</blocks>
+	</global>
+
+</config>
