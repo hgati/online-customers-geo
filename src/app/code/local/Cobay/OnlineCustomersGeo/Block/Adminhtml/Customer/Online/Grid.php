@@ -41,11 +41,11 @@ class Cobay_OnlineCustomersGeo_Block_Adminhtml_Customer_Online_Grid extends Mage
         parent::_prepareColumns();
 
         $this->addBeforeColumn('ip_country', array(
-            'header'    => Mage::helper('onlinecustomergrid')->__('Visitor Country'),
-            'default'   => Mage::helper('onlinecustomergrid')->__('n/a'),
+            'header'    => Mage::helper('onlinecustomersgeo')->__('Visitor Country'),
+            'default'   => Mage::helper('onlinecustomersgeo')->__('n/a'),
             'index'     => 'ip_country',
             'filter'    => false,
-			'renderer'  => 'Cobay_OnlineCustomerGrid_Block_Widget_Grid_Column_Renderer_Ipcountry',
+			'renderer'  => 'Cobay_OnlineCustomersGeo_Block_Widget_Grid_Column_Renderer_Ipcountry',
             'type'      => 'text',
             'sort'      => false
         ), 'ip_address');

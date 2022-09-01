@@ -5,7 +5,7 @@ class Cobay_OnlineCustomersGeo_Block_Adminhtml_Customer_Grid extends Mage_Adminh
     	parent::_prepareColumns();
     	
     	$this->addColumn('login_at', array(
-    		'header'    => Mage::helper('onlinecustomergrid')->__('Last Login'),
+    		'header'    => Mage::helper('onlinecustomersgeo')->__('Last Login'),
     		'type'      => 'datetime',
     		'align'     => 'center',
     		'index'     => 'login_at',
