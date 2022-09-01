@@ -5,15 +5,14 @@ class Cobay_OnlineCustomersGeo_Block_Widget_Grid_Column_Renderer_Ipcountry
 	public function render(Varien_Object $row){
 		$retour = '';
 
-		// geoip_contry_code, set by same variable name both Varnish and Nginx
-		$countryCode = $_SERVER["HTTP_GEOIP_COUNTRY_CODE"] ?? null; // ?? php7 Null Coalesce Operator
-		if(empty($countryCode)) return $retour;
-
-		$countryName = $_SERVER["HTTP_GEOIP_COUNTRY_NAME"] ?? null; // $username = isset($_GET['user']) ? $_GET['user'] : 'nobody';
-		if(empty($countryCode)) return $retour;
+		// geoip_contry_code, Nginx의 fcgi_params로 넘겨준 데이터임.
+		// ?? php7 Null Coalesce Operator, $username = isset($_GET['user']) ? $_GET['user'] : 'nobody';
+		$countryCode = $_SERVER["GEOIP_COUNTRY_CODE"] ?? '';
+		$countryName = $_SERVER["GEOIP_COUNTRY_NAME"] ?? '';
+		$countryCity = $_SERVER["GEOIP_COUNTRY_CITY"] ?? '';
 
 		$image = $this->getSkinUrl('images/onlinecustomersgeo/' . strtolower($countryCode) . '.gif');
-		$retour = '<img src="' . $image . '" /> ' . $countryName;
+		$retour = '<img src="' . $image . '" /> ' . $countryName . ' ' . $countryCity;
 
 		return $retour;
 	}
