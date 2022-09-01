@@ -9,7 +9,7 @@ class Cobay_OnlineCustomersGeo_Block_Widget_Grid_Column_Renderer_Ipcountry
 		// ?? php7 Null Coalesce Operator, $username = isset($_GET['user']) ? $_GET['user'] : 'nobody';
 		$countryCode = $_SERVER["GEOIP_COUNTRY_CODE"] ?? '';
 		$countryName = $_SERVER["GEOIP_COUNTRY_NAME"] ?? '';
-		$countryCity = $_SERVER["GEOIP_COUNTRY_CITY"] ?? '';
+		$countryCity = $_SERVER["GEOIP_CITY_NAME"] ?? '';
 
 		$image = $this->getSkinUrl('images/onlinecustomersgeo/' . strtolower($countryCode) . '.gif');
 		$retour = '<img src="' . $image . '" /> ' . $countryName . ' ' . $countryCity;
