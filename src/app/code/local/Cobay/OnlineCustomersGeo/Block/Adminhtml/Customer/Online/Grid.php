@@ -40,6 +40,8 @@ class Cobay_OnlineCustomersGeo_Block_Adminhtml_Customer_Online_Grid extends Mage
     {
         parent::_prepareColumns();
 
+		$this->removeColumn('firstname');
+		$this->removeColumn('middlename');
         $this->addBeforeColumn('ip_country', array(
             'header'    => Mage::helper('onlinecustomersgeo')->__('Country'),
             'default'   => Mage::helper('onlinecustomersgeo')->__('n/a'),
