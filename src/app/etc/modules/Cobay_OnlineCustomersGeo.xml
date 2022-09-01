@@ -1,13 +1,9 @@
 <?xml version="1.0"?>
 <config>
    <modules>
-      <Cobay_OnlineCustomerGrid>
+      <Cobay_OnlineCustomersGeo>
          <active>true</active>
          <codePool>local</codePool>
-         <depends>
-            <Cobay_Common/>
-            <Sandfox_GeoIP/>
-         </depends>
-      </Cobay_OnlineCustomerGrid>
+      </Cobay_OnlineCustomersGeo>
    </modules>
 </config>
