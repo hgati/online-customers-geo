@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Cobay_OnlineCustomerGrid>
+			<version>0.1.0</version>
+		</Cobay_OnlineCustomerGrid>
+	</modules>
+
+	<global>
+		<helpers>
+			<onlinecustomergrid>
+				<class>Cobay_OnlineCustomerGrid_Helper</class>
+			</onlinecustomergrid>
+		</helpers>
+		
+		<blocks>
+            <onlinecustomergrid>
+            	<class>Cobay_OnlineCustomerGrid_Block</class>
+           	</onlinecustomergrid>
+			<adminhtml>
+				<rewrite>
+					<customer_online_grid>Cobay_OnlineCustomerGrid_Block_Adminhtml_Customer_Online_Grid</customer_online_grid>
+					<customer_online_grid_renderer_url>Cobay_OnlineCustomerGrid_Block_Adminhtml_Customer_Online_Grid_Renderer_Url</customer_online_grid_renderer_url>
+				</rewrite>
+			</adminhtml>           	
+		</blocks>
+	</global>
+
+</config>
